@@ -9,6 +9,7 @@ License:    LGPL-2.1
 BuildArch:  noarch
 Source0:    %{name}-%{version}.tar.gz
 Source1001: efl-misc.manifest
+BuildRequires: eet-tools
 
 
 %description
@@ -21,31 +22,22 @@ cp %{SOURCE1001} .
 
 
 %build
-
+make
 
 %install
-rm -rf %{buildroot}
-%__mkdir_p %{buildroot}%{_sysconfdir}/profile.d
-%__cp etc/profile.d/* %{buildroot}%{_sysconfdir}/profile.d/
+make install prefix=%{_prefix} DESTDIR=%{buildroot}
 
 %post
 
 %if %{with wayland}
-f="/etc/profile.d/elm.sh"
+f="/etc/profile.d/efl.sh"
 grep --silent ELM_ENGINE "$f" \
-    || printf "\nELM_ENGINE=wayland_shm\n[ ! -d /dev/dri ] || ELM_ENGINE=wayland_egl\nexport ELM_ENGINE" >> "$f"
-
+    || printf "\nELM_ENGINE=wayland_shm\n[ ! -d /dev/dri ] || ELM_ENGINE=wayland_egl" >> "$f"
 %endif
 
-chown root:root /etc/profile.d/elm.sh
-chown root:root /etc/profile.d/evas.sh
-
-
 %files
-%manifest %{name}.manifest
 %defattr(-,root,root,-)
 %license COPYING
 %{_sysconfdir}/profile.d/*
-
-
-
+%{_datadir}/elementary/config/*
+%manifest %{name}.manifest
