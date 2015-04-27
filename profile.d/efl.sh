@@ -1,6 +1,5 @@
 ## Elementary
 export ELM_PROFILE="mobile"
-export ELM_ENGINE=gl
 export ELM_CLOUSEAU=1
 
 ## Ecore
