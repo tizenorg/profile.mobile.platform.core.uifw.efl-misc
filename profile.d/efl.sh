@@ -1,6 +1,5 @@
 ## Elementary
 export ELM_PROFILE="mobile"
-export ELM_CLOUSEAU=1
 
 ## Ecore
 export ECORE_IMF_INPUT_PANEL_ENABLED=1
