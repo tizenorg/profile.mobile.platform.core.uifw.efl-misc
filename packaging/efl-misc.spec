@@ -2,7 +2,7 @@
 
 Name:       efl-misc
 Summary:    Elementary config files
-Version:    0.1.31
+Version:    0.1.32
 Release:    0
 Group:      Graphics & UI Framework/Development
 License:    LGPL-2.1
