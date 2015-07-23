@@ -13,3 +13,6 @@ export EVAS_GL_NO_BLACKLIST=1
 
 ## Wayland
 export WAYLAND_DISPLAY="wayland-0"
+
+## Ector
+export ECTOR_BACKEND=default
