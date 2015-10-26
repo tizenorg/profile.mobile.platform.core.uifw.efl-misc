@@ -2,7 +2,6 @@
 export ELM_PROFILE="mobile"
 export ELM_DISPLAY="wl"
 export ELM_ACCEL="gl"
-export ELM_SCALE=4.0
 
 ## Ecore
 export ECORE_IMF_INPUT_PANEL_ENABLED=1
