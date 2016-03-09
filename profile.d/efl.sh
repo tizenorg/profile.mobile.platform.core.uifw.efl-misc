@@ -1,7 +1,6 @@
 ## Elementary
 export ELM_PROFILE="mobile"
 export ELM_DISPLAY="wl"
-export ELM_ACCEL="gl"
 
 ## Eina
 export EINA_LOG_DLOG_ENABLE=1
