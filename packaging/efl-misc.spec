@@ -32,6 +32,8 @@ f="/etc/profile.d/efl.sh"
 %if %{with wayland}
 grep --silent ELM_ENGINE "$f" \
     || printf "\nELM_ENGINE=wayland_shm\n[ ! -d /dev/dri ] || ELM_ENGINE=wayland_egl\nexport ELM_ENGINE" >> "$f"
+grep --silent ECORE_EVAS_ENGINE "$f" \
+    || printf "\nECORE_EVAS_ENGINE=wayland_shm\n[ ! -d /dev/dri ] || ECORE_EVAS_ENGINE=wayland_egl\nexport ECORE_EVAS_ENGINE" >> "$f"
 %else
 grep --silent ELM_ENGINE "$f" \
     || printf "\nexport ELM_ENGINE=gl" >> "$f"
