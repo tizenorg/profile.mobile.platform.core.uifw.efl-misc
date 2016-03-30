@@ -3,7 +3,7 @@ export ELM_PROFILE="mobile"
 export ELM_DISPLAY="wl"
 
 ## Eina
-export EINA_LOG_DLOG_ENABLE=1
+##export EINA_LOG_DLOG_ENABLE=1
 export EINA_LOG_LEVEL=3
 
 ## Ecore
