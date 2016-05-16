@@ -29,6 +29,7 @@ group "Elm_Config" struct {
   value "focus_autoscroll_mode" uchar: 0;
   value "popup_horizontal_align" double: 0.5;
   value "popup_vertical_align" double: 1.0;
+  value "popup_scrollable" uchar: 1;
   value "scale" double: 1.0;
   value "win_no_border" int: 1;
   value "bgpixmap" int: 0;
