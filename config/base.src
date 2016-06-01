@@ -45,6 +45,7 @@ group "Elm_Config" struct {
   value "fps" double: 60.0;
   value "theme" string: "efl-theme-tizen-mobile:default-mobile";
   value "modules" string: "copypasteUI_ctxpopup>entry/api:prefs>prefs_iface:datetime_input_spinner>datetime/api";
+  value "spinner_min_max_filter_enable" uchar: 1;
   value "tooltip_delay" double: 1.0;
   value "cursor_engine_only" uchar: 1;
   value "focus_highlight_enable" uchar: 0;
