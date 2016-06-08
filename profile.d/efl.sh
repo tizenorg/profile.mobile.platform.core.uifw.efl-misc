@@ -5,7 +5,7 @@ export ELM_ATSPI_MODE=1
 
 ## Eina
 ##export EINA_LOG_DLOG_ENABLE=1
-export EINA_LOG_LEVEL=3
+export EINA_LOG_LEVEL=2
 
 ## Ecore
 export ECORE_IMF_INPUT_PANEL_ENABLED=1
